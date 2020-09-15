@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+**This is still WIP.**
+A Simple tool that I am working on during quarantine to analyse the covid19 situation around the world. It has a basic dashboard that displays the number of active cases around the world as well as the mortality numbers. To help with the visualization i've used bar/line charts to depict the statistics. There is also an option to filter the data and view the numbers wrt to a specific country.
 ## Available Scripts
 
 In the project directory, you can run:
