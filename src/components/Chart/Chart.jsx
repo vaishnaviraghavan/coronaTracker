@@ -9,11 +9,9 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
     useEffect(() => {
         const fetchAPI = async () => {
             setDailyData(await fetchDailyData());
-        }
+        };
         fetchAPI();
     }, []);
-    console.log(confirmed, recovered, deaths)
-    console.log(country)
     const lineChart = (
         dailyData.length ? (
             <Line data={{
@@ -22,13 +20,11 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
                     data: dailyData.map(({confirmed}) => confirmed),
                     label: 'Infected',
                     borderColor: '#85C1E9',
-                    // backgroundColor:'#5499C7',
                     fill: true
                 }, {
                     data: dailyData.map(({deaths}) => deaths),
                     label: 'Deaths',
                     borderColor: '#CF6679',
-                    // backgroundColor:'#F1948A',
                     fill: true
                 }]
             }}/>
